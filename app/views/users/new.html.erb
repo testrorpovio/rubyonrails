@@ -1,0 +1,19 @@
+<%= render 'shared/page_title', title: "Sign Up!" %> 
+<%= render 'shared/errors', obj: @user %>
+
+<div class="row">
+    <div class="well col-md-8 col-md-offset-2">
+        <%= form_for @user do |f| %>
+        <%= f.label :Name %>
+        <%= f.text_field :name %></br>
+        </br></br>
+        <%= f.label :email %>
+        <%= f.text_field :email %></br>
+        </br></br>
+        <%= f.label :Password %>
+        <%= f.password_field :password %></br>
+        </br></br>
+        <%= f.submit 'Sign up', class: "btn btn-success pull-right" %>
+        <% end %>
+    </div>
+</div>
