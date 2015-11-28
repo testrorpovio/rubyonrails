@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="well col-md-8 col-md-offset-2">
+        <%= form_for @post do |f| %>
+        <%= f.label :"Title of the post" %>
+        <%= f.text_field :title, :size => "40" %>
+        </br></br>
+        <%= f.label :"Description of the post" %>
+        <%= f.text_field :description, :size => "40" %>
+        </br></br>
+        <%= f.label :"Username" %>
+        <%= f.text_field :username, :size => "40" %>
+        </br></br>
+        <%= f.submit 'Create Post', class: "btn btn-success pull-right" %>
+        <% end %>
+    </div>
+</div>
