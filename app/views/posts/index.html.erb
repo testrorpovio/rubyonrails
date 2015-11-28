@@ -1,15 +1,15 @@
 <div class="cener jumbotron">
     <h3>Featured post:</h3>
-    <h2><%= link_to @p.title , post_path(@p.id) %></h2>
+    <h2><%= link_to @fp.title , post_path(@fp.id) %></h2>
 </div>
 <%= will_paginate %>
 <% @posts.each do |p| %>
     <div class="panel panel-default">
-        <div class="panel-heading"><%= link_to @p.title , post_path(@p.id) %></div>
+        <div class="panel-heading"><%= link_to p.title , post_path(p.id) %></div>
         <div class="panel-body">
             <p><%= p.description %></p>
             </br>
-            <h6>Post added by: <%= link_to @p.user.name , user_path(@p.user.id) %></h6>
+            <h6>Post added by: <%= link_to p.user.name , user_path(p.user.id) %></h6>
         </div>
     </div>
 <% end %>
