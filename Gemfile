@@ -25,6 +25,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'bootstrap-sass', '~> 3.3.4'
 gem 'autoprefixer-rails'
+gem 'will_paginate', '3.0.7'
+gem 'bootstrap-will_paginate', '0.0.10'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

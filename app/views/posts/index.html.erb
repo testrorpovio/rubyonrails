@@ -1,0 +1,10 @@
+<%= will_paginate %>
+<% @posts.each do |p| %>
+    <div class="panel panel-default">
+        <div class="panel-heading"><%= p.title %></div>
+        <div class="panel-body">
+            <p><%= p.description %></p>
+        </div>
+    </div>
+<% end %>
+<%= will_paginate %>
