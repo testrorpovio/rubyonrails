@@ -1,9 +1,8 @@
 class PostsController < ApplicationController 
     before_action :require_user, only: [:new]
-    
+      
     def index
         @posts = Post.all.paginate(page: params[:page], per_page: 10).order("created_at desc")
-        @fp = Post.order("RANDOM()").first
     end
     
     def show

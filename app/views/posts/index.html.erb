@@ -1,6 +1,6 @@
-<div class="cener jumbotron">
+<div class="cener jumbotron" id="divToChange">
     <h3>Featured post:</h3>
-    <h2><%= link_to @fp.title , post_path(@fp.id) %></h2>
+    <h2><%= link_to featured_post.title , post_path(featured_post.id) %></h2>
 </div>
 <%= will_paginate %>
 <% @posts.each do |p| %>
